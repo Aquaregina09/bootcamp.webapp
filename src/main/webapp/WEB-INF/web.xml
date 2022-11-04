@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>web.demo3a</display-name>
+  <servlet>
+    <servlet-name>LoggingServlet</servlet-name>
+    <servlet-class>com.bootcamp.demo.servlets.LoggingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletA</servlet-name>
+    <servlet-class>com.bootcamp.demo.servlets.ServletA</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletB</servlet-name>
+    <servlet-class>com.bootcamp.demo.servlets.ServletB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoggingServlet</servlet-name>
+    <url-pattern>/logger</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletA</servlet-name>
+    <url-pattern>/a</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletB</servlet-name>
+    <url-pattern>/b</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>home.htm</welcome-file>
+    <welcome-file>home.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
